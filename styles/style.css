@@ -72,7 +72,7 @@
     display: flex;
     width: 1469px;
     flex-shrink: 0;
-    color: #fff;    
+    color: #fff;
     font-family: Raleway;
     font-size: 100px;
     font-style: normal;
@@ -208,7 +208,6 @@ filter: brightness(40%);
     font-weight: 700;
     line-height: 120%; /* 26.4px */
     text-decoration-line: underline;
-    text-transform: uppercase;
     position: relative;
     bottom: 200px;
     width: 376px;
@@ -223,7 +222,6 @@ filter: brightness(40%);
     font-weight: 700;
     line-height: 120%; /* 26.4px */
     text-decoration-line: underline;
-    text-transform: uppercase;
     position: relative;
     bottom: 173px;
     width: 376px;
@@ -238,7 +236,6 @@ filter: brightness(40%);
     font-weight: 700;
     line-height: 120%; /* 26.4px */
     text-decoration-line: underline;
-    text-transform: uppercase;
     position: relative;
     bottom: 175px;
     width: 345px;
