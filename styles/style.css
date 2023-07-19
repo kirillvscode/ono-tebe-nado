@@ -32,6 +32,7 @@
 
 .header__logo {
     width: 148px;
+    
 }
 
 .address {
@@ -42,19 +43,15 @@
     margin-left: 355px;
 }
 
-.header_address {
-    justify-content: end;
-
-}
-
 .address a {
     border-bottom: 1px solid;
     text-decoration: none;
 }
 
 .overlay {
-    width: 1440px;
+    width: 100%;
     height: 757px;
+    background-color: transparent;
 }
 
 .aligned-text {
@@ -63,14 +60,10 @@
     line-height: 1;
 }
 
-.aligned-text__center {
-    text-align: center;
-}
-
 .aligned-text__right {
     text-align: right;
     display: flex;
-    width: 1469px;
+    min-width: 1469px;
     flex-shrink: 0;
     color: #fff;
     font-family: Raleway;
@@ -87,7 +80,7 @@
 
 .letter-spacing-extended {
     display: flex;
-    width: 1340px;
+    min-width: 1340px;
     flex-direction: column;
     flex-shrink: 0;
     color: #fff;
@@ -105,7 +98,7 @@
 
 .letter-spacing-extended__class {
     display: flex;
-    width: 1340px;
+    min-width: 1340px;
     flex-direction: column;
     flex-shrink: 0;
     color: #fff;
@@ -122,6 +115,7 @@
 }
 
 .aligned-text__center {
+    text-align: center;
     display: flex;
     width: 1340px;
     flex-direction: column;
@@ -170,10 +164,11 @@
     z-index: 1;
     font-style: normal;
     margin-right: 50px;
+    background-color: transparent;
 }
 
 .lotos {
-    width: 1440px;
+    min-width: 1440px;
     height: 763.939px;
     flex-shrink: 0;
     background: url(./images/lotus-flower.png), lightgray 50% / cover no-repeat;
@@ -209,9 +204,9 @@
     line-height: 120%;
     /* 26.4px */
     text-decoration-line: underline;
-    position: relative;
-    bottom: 200px;
-    width: 376px;
+    position: absolute;
+    display: flex;
+    min-width: 376px;
 }
 
 .card__title__social {
@@ -224,9 +219,8 @@
     line-height: 120%;
     /* 26.4px */
     text-decoration-line: underline;
-    position: relative;
-    bottom: 173px;
-    width: 376px;
+    position: absolute;
+    min-width: 376px;
 }
 
 .card__title__class {
@@ -239,13 +233,12 @@
     line-height: 120%;
     /* 26.4px */
     text-decoration-line: underline;
-    position: relative;
-    bottom: 175px;
-    width: 345px;
+    position: absolute;
+    max-width: 355px;
 }
 
 .card__text {
-    width: 360px;
+    min-width: 360px;
     height: 96px;
     flex-shrink: 0;
     color: #FFF;
@@ -259,8 +252,8 @@
 }
 
 .card__text__social {
-    width: 349px;
-    height: 96px;
+    min-width: 351px;
+    height: 240px;
     flex-shrink: 0;
     color: #FFF;
     font-family: Raleway;
@@ -270,12 +263,11 @@
     line-height: 120%;
     /* 24px */
     position: relative;
-    bottom: 143px;
 }
 
 .card__text__class {
-    width: 348px;
-    height: 96px;
+    width: 350px;
+    height: 193px;
     flex-shrink: 0;
     color: #FFF;
     font-family: Raleway;
@@ -285,7 +277,6 @@
     line-height: 120%;
     /* 24px */
     position: relative;
-    bottom: 97px;
 }
 
 .card__type__film {
@@ -424,7 +415,7 @@
     list-style: none;
 }
 
-.header__address__class {
+.footer__address__class {
     margin-left: 48px;
     margin-top: -50px;
     width: 316px;
