@@ -32,11 +32,11 @@
 
 .header__logo {
     width: 148px;
-    
+
 }
 
 .address {
-    max-height: 240px;
+    height: 95px;
     font-size: 18px;
     font-style: normal;
     line-height: 1.35;
@@ -419,6 +419,12 @@
     margin-left: 48px;
     margin-top: -50px;
     width: 316px;
+}
+
+.footer__address__class__title {
+    margin-left: 48px;
+    margin-top: -95px;
+    width: 306px;
 }
 
 .footer__menu-list-item__class {
