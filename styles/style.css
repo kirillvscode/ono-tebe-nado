@@ -32,7 +32,6 @@
 
 .header__logo {
     width: 148px;
-
 }
 
 .address {
@@ -83,7 +82,7 @@
     min-width: 1340px;
     flex-direction: column;
     flex-shrink: 0;
-    color: #fff;
+    color: #ffffff;
     font-family: Raleway;
     font-size: 100px;
     font-style: normal;
@@ -171,7 +170,6 @@
     min-width: 1440px;
     height: 763.939px;
     flex-shrink: 0;
-    background: url(./images/lotus-flower.png), lightgray 50% / cover no-repeat;
     filter: brightness(40%);
 }
 
@@ -281,8 +279,8 @@
 
 .card__type__film {
     background-image: url(../images/card-lot-01.jpg);
-    width: 430px;
-    height: 451px;
+    max-width: 430px;   
+    max-height: 451px;
     position: relative;
     bottom: 1114px;
     left: 50px;
@@ -290,8 +288,8 @@
 
 .card__type__book {
     background-image: url(../images/card-lot-02.jpg);
-    width: 430px;
-    height: 450px;
+    max-width: 430px;
+    max-height: 450px;
     position: relative;
     bottom: 1564px;
     left: 505px;
@@ -299,8 +297,8 @@
 
 .card__type__picture {
     background-image: url(../images/card-lot-03.jpg);
-    width: 430px;
-    height: 450px;
+    max-width: 430px;
+    max-height: 450px;
     position: relative;
     bottom: 2014px;
     left: 960px;
@@ -334,7 +332,6 @@
 .about {
     display: grid;
     grid-template-columns: 430px 1fr;
-    justify-content: space-between;
     gap: 25px;
     padding: 90px 20px 20px 50px;
     margin-top: -1892px;
@@ -349,27 +346,33 @@
     margin: auto;
     border-radius: 50%;
     background-color: #000;
+    position: absolute;
+    margin: 95px 95px 165px 95px;
 }
 
 .about__logo-image {
     width: 148px;
     height: 114px;
     flex-shrink: 0;
+    position: absolute;
 }
 
 .about__title {
-    margin: 100px 0;
+    position: absolute;
+    margin: 100px 0px 160px 0;
     font-size: 40px;
     text-transform: uppercase;
     color: #000;
 }
 
 .about__text {
-    width: 900px;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 23px;
     font-size: 20px;
+    position: absolute;
+    margin: 0px 0px -430px 0px; 
 }
 
 .about__text-class {
@@ -378,6 +381,15 @@
     flex-direction: column;
     gap: 25px;
     font-size: 20px;
+}
+
+.about__column {
+    display: flex;
+    height: 308px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
 }
 
 .footer__menu-list {
@@ -395,12 +407,12 @@
     justify-content: end;
     gap: 49px;
     list-style: none;
-    margin-right: 55px;
-    margin-top: -1px;
+    position: absolute;
+    margin: 177px 795px;
 }
 
 .footer__menu-list-item {
-    width: 45px;
+    width: 48px;
     height: 48px;
     list-style: none;
     text-decoration: none;
@@ -417,33 +429,31 @@
 
 .footer__address__class {
     margin-left: 48px;
-    margin-top: -50px;
     width: 316px;
 }
 
 .footer__address__class__title {
-    margin-left: 48px;
-    margin-top: -95px;
-    width: 306px;
+    max-width: 306px;
+    position: absolute;
+    margin: 86px 43px;
 }
 
 .footer__menu-list-item__class {
-    position: relative;
-    margin-right: 800px;
-    margin-top: 158px;
+    position: absolute;
     list-style-type: none;
     list-style: none;
     border-bottom: none;
+    margin: 182px 0px;
 }
 
 .footer__menu-list-item__lots {
     list-style-type: none;
-    margin-right: 870px;
-    margin-left: -43px;
+    position: absolute;
+    margin: 203px 0px 19px -42px;
 }
 
 .footer__menu-list-item__notes {
     list-style-type: none;
-    margin-right: 800px;
-    margin-left: -23px;
+    position: absolute;
+    margin: 225px 0px 19px -24px;
 }
